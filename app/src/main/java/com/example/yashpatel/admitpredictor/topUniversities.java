@@ -22,6 +22,8 @@ import org.jsoup.select.Elements;
 
 public class topUniversities extends AppCompatActivity {
 TextView tv;
+String titles[] = new String[10];
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,17 +42,15 @@ TextView tv;
                 //tv.append(response);
                 Document doc = Jsoup.parse(response);
 
+                // first get the title of universities by class
                 Elements utitle = doc.getElementsByClass("DetailCardColleges__StyledAnchor-s1e80ggw-2 cJYIgQ Anchor-u1fur6-0 eNYUZI");
-
-                tv.append("start :");
                 for (int i = 0; i < utitle.size(); i++) {
                     Element item = utitle.get(i);
-
-
-                    tv.append(item.text());
-
+                    titles[i]=item.text();
 
                 }
+                tv.append(titles[0]);
+
                 Toast.makeText(topUniversities.this, "items found : "+utitle.size(), Toast.LENGTH_LONG).show();
 
             }
