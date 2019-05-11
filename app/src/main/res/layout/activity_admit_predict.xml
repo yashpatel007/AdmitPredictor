@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admitPredict"
+    android:orientation="vertical"
+    android:background="@color/theam_main">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <ProgressBar
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        style="?android:progressBarStyleHorizontal"
+                        android:progressDrawable="@drawable/circlebkg"
+                        android:progress="100"/>
+                    <ProgressBar
+                        android:id="@+id/grebar"
+                        style="?android:progressBarStyleHorizontal"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:progressDrawable="@drawable/circle" />
+
+
+                    <EditText
+                        android:id="@+id/grescore"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:textSize="30sp"
+                        android:textColor="@color/white"
+                        android:hint="Score"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/grebar"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/grebar"
+                        android:textStyle="bold"
+                        android:inputType="number"/>
+
+
+
+                </android.support.constraint.ConstraintLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gre Score"
+                        android:layout_gravity="center"
+                        android:textSize="30sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+                    <Button
+                        android:id="@+id/greok"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:text=""
+                        android:background="@drawable/okbtn"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <ProgressBar
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        style="?android:progressBarStyleHorizontal"
+                        android:progressDrawable="@drawable/circlebkg"
+                        android:progress="100"/>
+
+                    <ProgressBar
+                        android:id="@+id/toeflbar"
+                        style="?android:progressBarStyleHorizontal"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:progressDrawable="@drawable/circle" />
+
+                    <EditText
+                        android:id="@+id/toeflscore"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:textSize="30sp"
+                        android:textColor="@color/white"
+                        android:hint="Score"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/toeflbar"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/toeflbar"
+                        android:textStyle="bold"
+                        android:ems="10"
+                        android:inputType="number"/>
+
+
+
+                </android.support.constraint.ConstraintLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TOEFL Score"
+                        android:layout_gravity="center"
+                        android:textSize="30sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+                    <Button
+                        android:id="@+id/toeflok"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/okbtn"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <ProgressBar
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        style="?android:progressBarStyleHorizontal"
+                        android:progressDrawable="@drawable/circlebkg"
+                        android:progress="100"/>
+
+                    <ProgressBar
+                        android:id="@+id/gpabar"
+                        style="?android:progressBarStyleHorizontal"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:progressDrawable="@drawable/circle" />
+
+                    <EditText
+                        android:id="@+id/gpascore"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:textSize="30sp"
+                        android:textColor="@color/white"
+                        android:hint="Score"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/gpabar"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/gpabar"
+                        android:textStyle="bold"
+                        android:inputType="number"/>
+
+
+
+                </android.support.constraint.ConstraintLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GPA Score"
+                        android:layout_gravity="center"
+                        android:textSize="30sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+                    <Button
+                        android:id="@+id/gpaok"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/okbtn"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/okbtn"
+                android:onClick="gotopred" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

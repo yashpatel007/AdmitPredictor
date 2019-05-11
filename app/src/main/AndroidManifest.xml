@@ -22,7 +22,9 @@
             android:name=".MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".topUniversities"></activity>
+        <activity android:name=".topUniversities" />
+        <activity android:name=".admitPredict" />
+        <activity android:name=".predList"></activity>
     </application>
 
 </manifest>
