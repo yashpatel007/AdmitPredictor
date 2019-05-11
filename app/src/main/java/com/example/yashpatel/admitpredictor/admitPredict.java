@@ -96,8 +96,14 @@ public class admitPredict extends AppCompatActivity {
 
 
     public void gotopred(View v){
+
+        if(grescore.getText().toString().length()!=0 && toeflscore.getText().toString().length()!=0){
         Intent i = new Intent(this,predList.class);
+        i.putExtra("gre_score",(Integer.valueOf(grescore.getText().toString())));
+        i.putExtra("toefl_score",(Integer.valueOf(toeflscore.getText().toString())));
         startActivity(i);
+        }
+        else{Toast.makeText(admitPredict.this,"please enter comething",Toast.LENGTH_LONG).show();}
     }
 
 }

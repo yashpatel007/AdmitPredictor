@@ -10,24 +10,117 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="GRE Score : "
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorAccent"/>
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:textStyle="bold"
+                    android:id="@+id/grepassed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="000"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TOEFL Score : "
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="000"
+                    android:id="@+id/toeflpassed"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chance : Safe"
+                android:textColor="@color/green"
+                android:textSize="20sp"/>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <TextView
+                    android:id="@+id/safebucket"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </ScrollView>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chance : Medium"
+                android:textColor="@color/yellow"
+                android:textSize="20sp"/>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <TextView
+                    android:id="@+id/mediumbucket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </ScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chance : Low"
+                android:textColor="@color/red"
+                android:textSize="20sp"/>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <TextView
+                    android:id="@+id/lowbucket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </ScrollView>
+
+
+
+
+
+
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="All university list for above 300 GRE"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/tv"/>
-
-
-
-
-
-
-
-
-
-
 
         </LinearLayout>
     </ScrollView>

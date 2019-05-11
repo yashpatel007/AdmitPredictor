@@ -11,4 +11,7 @@
     <color name="theam_dfreen">#42858C</color>
     <color name="ring_color">#BEBEBE</color>
     <color name="white">#ffffff</color>
+    <color name="green">#19fa09</color>
+    <color name="yellow">#fff707</color>
+    <color name="red">#ff0303</color>
 </resources>
