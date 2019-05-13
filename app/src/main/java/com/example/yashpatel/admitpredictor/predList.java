@@ -212,27 +212,27 @@ public class predList extends AppCompatActivity {
 
 
                 }
-
-                if (gre < 325 && gre > 310 && toefl > 90) {
-                    String stopres[] = getRandom(bucket1, 5, 2);
+//======================================================================================================================================//
+                if (gre <= 325 && gre >= 310 && toefl > 90) {
+                   // String stopres[] = getRandom(bucket1, 5, 2);
                     String smidres[] = getRandom(bucket2, 10, 1);
-                    String smidres2[]= getRandom(bucket2,5,2);
-                    String slowres[] = getRandom(bucket3, 5, 2);
+                    String smidres2[]= getRandom(bucket2,10,2);
+                    String slowres[] = getRandom(bucket3, 10, 2);
                     // fill the safe bucket first
-                    for (int q = 0; q < 4; q++) {
+                    for (int q = 0; q < 7; q++) {
                         safebucket.append(slowres[q]);
                         safebucket.append("\n");
                     }
-                    for (int k = 0; k < 4; k++) {
+                    for (int k = 0; k < 3; k++) {
                         safebucket.append(smidres[k]);
                         safebucket.append("\n");
                     }
-                    for (int k = 0; k < 4; k++) {
+                    for (int k = 0; k < 3; k++) {
                         safebucket.append(smidres2[k]);
                         safebucket.append("\n");
                     }
                     //fill the medium bucket
-                    String mtopres[] = getRandom(bucket1, 5, 3);
+                    String mtopres[] = getRandom(bucket1, 7, 2);
                     String mmidres[] = getRandom(bucket2, 10, 1);
                     String mlowres[] = getRandom(bucket3, 5, 1);
                     for (int q = 0; q < 4; q++) {
@@ -250,8 +250,8 @@ public class predList extends AppCompatActivity {
                     // fill the low bucket
                     String ltopres[] = getRandom(bucket1, 4, 1);
                     String lmidres[] = getRandom(bucket1, 5, 1);
-                    String llowres[] = getRandom(bucket1, 5, 3);
-                    for (int q = 0; q < 1; q++) {
+                    String llowres[] = getRandom(bucket1, 10, 2);
+                    for (int q = 0; q < 7; q++) {
                         lowbucket.append(llowres[q]);
                         lowbucket.append("\n");
                     }
@@ -259,17 +259,61 @@ public class predList extends AppCompatActivity {
                         lowbucket.append(lmidres[k]);
                         lowbucket.append("\n");
                     }
-                    for (int j = 0; j < 7; j++) {
+                    for (int j = 0; j < 1; j++) {
                         lowbucket.append(ltopres[j]);
                         lowbucket.append("\n");
                     }
-                    if(gre<310 && gre >295 && toefl>80){
-
-
-
-
                     }// if ends
+
+//==============================================================category 3 ======================================================================//
+                if (gre <=310 && gre>=295 && toefl >80){
+                    //String stopres[] = getRandom(bucket1, 7, 1);
+                    String smidres[] = getRandom(bucket2, 6, 1);
+                    String slowres[] = getRandom(bucket3, 10, 1);
+                    // populate safe options// donst even stand to get the good collages
+                    for (int q = 0; q < 7; q++) {
+                        safebucket.append(slowres[q]);
+                        safebucket.append("\n");
+                    }
+                    for (int k = 0; k < 5; k++) {
+                        safebucket.append(smidres[k]);
+                        safebucket.append("\n");
+                    }
+                    // populate the medium bucket
+                    String mtopres[] = getRandom(bucket1, 5, 3);
+                    String mmidres[] = getRandom(bucket2, 10, 1);
+                    String mlowres[] = getRandom(bucket3, 8, 1);
+                    for (int q = 0; q < 6; q++) {
+                        mediumbucket.append(mlowres[q]);
+                        mediumbucket.append("\n");
+                    }
+                    for (int k = 0; k < 5; k++) {
+                        mediumbucket.append(mmidres[k]);
+                        mediumbucket.append("\n");
+                    }
+                    for (int j = 0; j < 1; j++) {
+                        mediumbucket.append(mtopres[j]);
+                        mediumbucket.append("\n");
+                    }
+                    // populate the low chance options
+                    //populate the low chance option
+                    String ltopres[] = getRandom(bucket1, 5, 1);
+                    String lmidres[] = getRandom(bucket1, 8, 2);
+                    String llowres[] = getRandom(bucket1, 8, 3);
+                    for (int q = 0; q < 5; q++) {
+                        lowbucket.append(llowres[q]);
+                        lowbucket.append("\n");
+                    }
+                    for (int k = 0; k < 4; k++) {
+                        lowbucket.append(lmidres[k]);
+                        lowbucket.append("\n");
+                    }
+                    for (int j = 0; j < 3; j++) {
+                        lowbucket.append(ltopres[j]);
+                        lowbucket.append("\n");
+                    }
                 }
+
 
 
             }// public void run ends

@@ -24,7 +24,8 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".topUniversities" />
         <activity android:name=".admitPredict" />
-        <activity android:name=".predList"></activity>
+        <activity android:name=".predList" />
+        <activity android:name=".about"></activity>
     </application>
 
 </manifest>
